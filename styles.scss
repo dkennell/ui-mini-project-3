@@ -8,10 +8,16 @@ body {
     background-color: #eee;
 }
 
+h2, p {
+    margin: 0;
+}
+
 // Reset end
 
 .main {
+    display: grid;
     margin: 2em;
+    grid-gap: 1em;
 }
 
 .page-title {
