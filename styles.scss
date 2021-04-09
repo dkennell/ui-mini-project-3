@@ -27,16 +27,37 @@ h2, p {
 
     &:after {
         display: block;
-        height: .3em;
+        height: .4em;
         width: 100%;
         content: "";
-        background-color: purple;
+        background-color: 6817ba;
         margin-top: .5em;
     }
 }
 
 .featured-img {
     width: 100%;
+}
+
+.img-description-container {
+    display: grid;
+    text-align: right;
+}
+
+.img-description {
+
+    &__content {
+        margin: 1em 0;
+        font-family: 'Lato', sans-serif;
+    }
+
+    &__title {
+        font-family: 'Fjalla One', sans-serif;
+    }
+}
+
+.img-description-2, .img-description-4 {
+    text-align: left;
 }
 
 
