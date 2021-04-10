@@ -16,7 +16,7 @@ h2, p {
   display: grid;
   grid-gap: 3em;
   max-width: 1000px;
-  margin: 3em auto;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -26,6 +26,7 @@ h2, p {
   .main {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    margin-top: 3em;
   }
 }
 
