@@ -16,12 +16,19 @@ h2, p {
 
 .main {
     display: grid;
-    margin: 2em;
-    grid-gap: 1em;
+    grid-gap: 3em;
+    max-width: 1000px;
+    margin: 3em auto;
+    align-items: center;
+    
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 .page-title {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
 
@@ -33,10 +40,12 @@ h2, p {
         background-color: 6817ba;
         margin-top: .5em;
     }
-}
 
-.featured-img {
-    width: 100%;
+    @media (min-width: 1200px) {
+        grid-area: 1 / 2;
+        font-size: 3.5em;
+        align-self: center;
+    }
 }
 
 .img-description-container {
@@ -54,10 +63,46 @@ h2, p {
     &__title {
         font-family: 'Fjalla One', sans-serif;
     }
+
+    @media (min-width: 1200px) {
+        font-size: 1.5em;
+    }
+}
+
+.featured-img {
+    width: 100%;
+    @media (min-width: 1200px) {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+.feature-img-1 {
+    @media (min-width: 1200px) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
+.feature-img-2 {
+    @media (min-width: 1200px) {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+}
+
+.feature-img-3 {
+    @media (min-width: 1200px) {
+        grid-area: 3 / 1 / 6 / 2;
+    }
+}
+
+.feature-img-4 {
+    @media (min-width: 1200px) {
+        grid-area: 5 / 2 / 6 / 3;
+    }
 }
 
 .img-description-2, .img-description-4 {
-    text-align: left;
+    text-align: start;
 }
 
 
